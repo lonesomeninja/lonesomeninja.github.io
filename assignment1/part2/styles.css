@@ -1,0 +1,84 @@
+.all
+{
+	background: url(bck.jpg) no-repeat top left;
+}
+
+.container {
+	background: url(bck2.jpg) no-repeat 142px 0;
+	
+}
+
+.logo
+{
+	
+	margin: -5px 0 5px 250px;
+}
+
+.left_container h3 {
+	background: url(piuma.gif) no-repeat;
+	font-family: arial;
+	text-indent: 30px;
+    	width: 400px;
+    	font-family: arial;
+	margin: -5px 0 5px 150px;
+	font-weight: 100;
+	
+}
+
+.text p
+{
+	text-indent: 20px;
+    	width: 400px;
+    	font-size: 12;
+    	font-family: arial;
+    	text-align: justify;
+    	margin-left:150px;
+}
+
+.feet 
+{		
+  	margin-left: 300px;
+	font-family: arial;
+	
+}
+
+.feet a
+{
+	color:black;
+	font-weight: bold;
+	font-size: 12;
+}
+
+.right_container nav
+{
+	top: 170px;
+    	left: 550px;
+    	position: absolute;
+    	text-align: right;
+    	font-family: "lucida grande", verdana, tahoma, arial;
+    	padding: 0 12px;
+    	width: 210px;  
+}
+
+.right_container ul 
+{
+	list-style: none;
+	font-size: 12;
+	font-family: arial;
+}
+
+.right_container h3
+{
+	font-weight: 100;
+}
+
+.right_container a
+{
+	color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+

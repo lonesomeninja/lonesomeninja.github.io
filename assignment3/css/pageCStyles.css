@@ -1,0 +1,59 @@
+body
+{
+margin-bottom: 75px;
+background: #FFFFCC;
+}
+
+.column
+{
+background: lightblue;
+border-radius: 5px;
+border: 2px solid black;
+padding-bottom: 10px;
+margin: 0 5px 10px 5px;
+height: 250px;
+width: 49%;
+}
+
+.btn
+{
+color: black;
+}
+
+.img
+{
+color: black;
+height: 700px;
+border-radius: 5px;
+border: 2px solid black;
+background: indianred;
+}
+
+.col-head
+{
+color:white;
+font-size: 30px;
+}
+
+.col-head2
+{
+color:black;
+font-size: 30px;
+}
+
+.modbod
+{
+color: black;
+text-align: center;
+}
+
+.modhead
+{
+color: black;
+font-size: 20px;
+}
+
+.reg
+{
+background: lightgreen;
+}

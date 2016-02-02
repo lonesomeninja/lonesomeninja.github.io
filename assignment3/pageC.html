@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page C</title>
+        <meta name = "viewport" content = "width=device-width, initial-cale=1.0">
+        <link href = "css/bootstrap.min.css" rel = "stylesheet">
+        <link href = "css/styles.css" rel = "stylesheet">
+        <link href = "css/pageCStyles.css" rel = "stylesheet">
+    </head>
+    <body>
+    
+        <div class = "navbar navbar-inverse navbar-static-top">
+            <div class = "container">
+                
+                <a href = "../masterHome.html" class = "navbar-brand">Parent</a>
+                
+                <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                </button>
+                
+                
+                <div class = "collapse navbar-collapse navHeaderCollapse">
+                
+                    <ul class = "nav navbar-nav navbar-right">
+                        
+                        <li><a href = "index.html">Home</a></li>    
+                        
+                        <li class = "dropdown active">
+                            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Pages<b class="caret"></b></a>
+                       
+                        <ul class = "dropdown-menu">
+                            
+                        <li><a href = "page2.html">Page Dos</a></li> 
+                        <li class="active"><a href = "pageC.html">Page C</a></li>
+                        
+                        </ul>
+                        
+                        <li><a class="reg" style="color: white" href = "#contact" data-toggle = "modal">Register</a></li>
+                        
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-6 column">
+                    <h3><a class = "col-head" href = "#">Superman</a></h3>
+                    <p>Superman is hard to kill.  Virtually unstoppable due to his power.</p>
+                    <p>Strengths and Powers: Super Strength, Super Speed, Heat Vision, X-ray Vision, Flight, Invulnerability, Ice Breath, Enhanced Senses, Super Intelligence</p>
+                    <p>Weaknesses and Vulnerabilities: Kryptonite Poison, Vulnerable to Magic, Those equal or above in strength</p>                    
+                    <a href = "#" class = "btn btn-info">Read More</a>
+                </div> 
+                <div class = "col-md-6 column">
+                    <h3><a class = "col-head" href = "#">Batman</a></h3>
+                    <p>Batman is hard to kill.  In peak human condition; not to be taken lightly.</p>
+                    <p>Strengths and Powers: Peak strength, agility, intelligent, and knowledge of steath, psychology, and gadgetry</p>
+                    <p>Weaknesses and Vulnerabilities: Vulnerable to Parents Death, He's human</p>
+                    <a href = "#" class = "btn btn-info">Read More</a>
+                </div>
+            </div>
+     
+        <div class = "row">
+                <div class = "col-md-3 img">
+                    <h3><a class = "col-head2" href = "#">World's Finest</a></h3>
+                    <p>These two have been at it for decades; whether side-by-side or at each othere's throats, there always have each other's back (play on words intended).</p>
+                    <p>Together they have fought many foes beyond their own single handling.  They've' created the best due since bacon and eggs.</p>
+                    <p>Superman and Batman have both created teams of their own and have helped found a planetary team called the Justice League.  This league helps defend the world from extra-terrestrial and terrestrial threats.</p>                    
+                    <p>Far in the future, many heroes will arise who shall be inspired by both Batman and Superman.  They will save countless lives and blah blah blah text.</p>                    
+                    <a href = "#" class = "btn btn-info">Read More</a>
+                </div>
+                
+                <div class = "col-md-9 img" style="background: url(superman_batman.jpg)">
+                    <h3><a class = "col-head" href = "#">Sueprman and Batman</a></h3>
+                </div>
+            </div>
+        </div>
+   
+        <div class = "navbar navbar-inverse navbar-fixed-bottom botnav">
+            <div class = "container">
+                <p class = "navbar-text pull-left">This is the footer.</p> 
+                <a href = "index.html" class = "navbar-btn btn-danger btn pull-right">Subscribe to Reisz</a>   
+            </div>
+        </div>
+        
+        <div class = "modal fade" id = "contact" role= "dialog">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <div class = "modal-header">
+                        <h4>Sign up to stay human!</h4>
+                    </div>
+                        <div class = "modal-body modbod">
+    <form class="main" id="contactUsForm" role="form">
+	<div class="field">
+        <label class = "modhead">Name:</label>
+		<input type="text" name="name" placeholder="Clark Kent">
+	</div>
+
+	<div class="field">
+        <label class = "modhead">Email:</label>
+		<input type="text" name="email" placeholder="email@email.com">
+	</div>
+    
+    <div class="field">
+        <label class = "modhead">URL:</label>
+		<input type="text" name="URL" placeholder="www.website.com">
+	</div>
+
+	<div class="message">
+        <label class = "modhead">Message:</label>
+		<textarea name="message" placeholder="Write your message here..."></textarea>
+	</div>
+    </form>
+                            </div>
+                            <div class="modal-footer">
+                                <a class="submit btn btn-success" data-dismiss="modal">Register</a>
+                                <a class="btn btn-danger" data-dismiss = "modal">Close</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+        
+    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src = "js/bootstrap.js"></script>
+    </body>
+</html>

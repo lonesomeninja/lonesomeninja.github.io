@@ -1,0 +1,132 @@
+a
+{
+font-size:24;
+text-decoration: none;
+background-color: black;
+padding: 10px;
+color: white;
+border-radius: 5px;
+}
+
+a:hover
+{
+background: grey;
+border-radius: 5px;
+border: 3px solid black;
+}
+
+h1
+{
+font-size: 60px;
+border: 5px double blue;
+border-radius: 10px;
+width: 35%;
+margin-top: 35px;
+margin-left: auto;
+margin-right: auto;
+}
+
+h3
+{
+text-align:center;
+font-size: 30;
+width: 700px;
+margin: auto;
+text-decoration: underline;
+}
+
+body
+{
+text-align: center;
+font-family: arial;
+background: #FFFFCC;
+}
+
+.main
+{
+width: 35%;
+height: 456px;
+border: 3px solid black;
+margin: auto;
+background:white;
+}
+
+
+.ttt
+{
+color: red;
+}
+
+.ttt:hover
+{
+background: lightgray;
+width:30%;
+margin: auto;
+}
+
+.clear
+{
+border:1px solid black;
+background: yellow;
+color: black;
+font-size: 30px;
+float: auto;
+width: 35%;
+height: auto;
+margin: auto;
+margin-bottom: 10px;
+}
+
+.clear:hover
+{
+background:black;
+color: yellow;
+border:1px solid yellow;
+}
+
+.field
+{
+margin: 10px 10px 10px 10px;
+}
+
+.submit
+{
+margin: 10px 10px 10px 10px;
+font-size: 30px;
+}
+
+.error
+{
+color: red;
+}
+
+.tableHead
+{
+text-decoration: underline;
+}
+.mainFAQ
+{
+background: white;
+text-align: left;
+border: 1px solid black;
+}
+
+.score
+{
+width: 20%;
+font-size: 30px;
+margin:auto;
+margin-bottom: 20px;
+border: 2px solid black;
+}
+
+.git
+{
+border: 2px solid black;
+background:white;
+padding: 5px 0 20px 0;
+margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+width: 300px;
+}

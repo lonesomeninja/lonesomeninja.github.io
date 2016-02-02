@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page 2</title>
+        <meta name = "viewport" content = "width=device-width, initial-cale=1.0">
+        <link href = "css/bootstrap.min.css" rel = "stylesheet">
+        <link href = "css/styles.css" rel = "stylesheet">
+        <link href = "css/page2Styles.css" rel = "stylesheet">
+    </head>
+    <body>
+    
+        <div class = "navbar navbar-inverse navbar-static-top">
+            <div class = "container">
+                
+                <a href = "../masterHome.html" class = "navbar-brand">Parent</a>
+                
+                <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                </button>
+                
+                
+                <div class = "collapse navbar-collapse navHeaderCollapse">
+                
+                    <ul class = "nav navbar-nav navbar-right">
+                        
+                        <li><a href = "index.html">Home</a></li>    
+                        
+                        <li class = "dropdown active">
+                            <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Pages<b class="caret"></b></a>
+                       
+                        <ul class = "dropdown-menu">
+                            
+                        <li class="active"><a href = "page2.html">Page Dos</a></li> 
+                        <li><a href = "pageC.html">Page C</a></li>
+                        
+                        </ul>
+                        
+                        <li><a class="reg" style="color: white" href = "#contact" data-toggle = "modal">Register</a></li>
+                        
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-md-4 column">
+                    <h3><a class = "col-head" href = "#">Amazon</a></h3>
+                    <p>Tall, tough fighting machine.  This baby will cut you down with out a moments notice.</p>
+                    <p>Type: Warrior Princess</p>
+                    <p>Other nerdy comic sstuff...</p>                    
+                    <a href = "#" class = "btn btn-info">Read More</a>
+                </div> 
+                <div class = "col-md-4 column">
+                    <h3><a class = "col-head" href = "#">Kryptonian</a></h3>
+                    <p>He's a bird.  He's a plane. He's Superman.  Superman is everything.  Superman is life.</p>
+                    <p>Type: Invulnerable Powerhouse</p>
+                    <p>Even more nerdy stuff.</p>
+                    <a href = "#" class = "btn btn-info">Read More</a>
+                </div>
+                <div class = "col-md-4 column">
+                    <h3><a class = "col-head" href = "#">Human</a></h3>
+                    <p>Ever wonder what beats a ninja?  Batman.</p>
+                    <p>Type: Agile Stealth Gadgetry</p>
+                    <p>Tacos rule.</p>
+                    <a href = "#" class = "btn btn-info">Read More</a>
+                </div>
+            </div>
+        
+        
+        <div class = "row">
+                <div class = "col-md-4 column img" style="background: url(wonder_woman.jpg)">
+                    <h3><a class = "col-head" href = "#">Wonder Woman</a></h3>
+                </div> 
+                <div class = "col-md-4 column img" style="background: url(superman.jpg)">
+                    <h3><a class = "col-head" href = "#">Superman</a></h3>
+                </div>
+                <div class = "col-md-4 column img" style="background: url(batman.jpg)">
+                    <h3><a class = "col-head" href = "#">Batman</a></h3>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class = "navbar navbar-inverse navbar-fixed-bottom botnav">
+            <div class = "container">
+                <p class = "navbar-text pull-left">This is the footer.</p> 
+                <a href = "index.html" class = "navbar-btn btn-danger btn pull-right">Subscribe to Reisz</a>   
+            </div>
+        </div>
+        
+        <div class = "modal fade" id = "contact" role= "dialog">
+            <div class = "modal-dialog">
+                <div class = "modal-content">
+                    <div class = "modal-header">
+                        <h4>Sign up to stay human!</h4>
+                    </div>
+                        <div class = "modal-body modbod">
+    <form class="main" id="contactUsForm" role="form">
+	<div class="field">
+        <label class = "modhead">Name:</label>
+		<input type="text" name="name" placeholder="Clark Kent">
+	</div>
+
+	<div class="field">
+        <label class = "modhead">Email:</label>
+		<input type="text" name="email" placeholder="email@email.com">
+	</div>
+    
+    <div class="field">
+        <label class = "modhead">URL:</label>
+		<input type="text" name="URL" placeholder="www.website.com">
+	</div>
+
+	<div class="message">
+        <label class = "modhead">Message:</label>
+		<textarea name="message" placeholder="Write your message here..."></textarea>
+	</div>
+    </form>
+                            </div>
+                            <div class="modal-footer">
+                                <a class="submit btn btn-success" data-dismiss="modal">Register</a>
+                                <a class="btn btn-danger" data-dismiss = "modal">Close</a>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+        
+    <script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src = "js/bootstrap.js"></script>
+    </body>
+</html>

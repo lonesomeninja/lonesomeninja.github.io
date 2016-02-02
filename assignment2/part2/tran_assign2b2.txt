@@ -1,0 +1,76 @@
+    1  exit
+    2  cd desktop
+    3  cd assignment2
+    4  git checkout master
+    5  git merge 1324_sales_tax_calculations
+    6  git merge 1234_sales_tax_calculations
+    7  git push
+    8  git pull --rebase
+    9  history > tran_assign2b
+   10  history > tran_assign2b.txt
+   11  git log > tran_assign2b_log.txt
+   12  commit
+   13  git clone https://github.com/jaskenas/coffee-script.git
+   14  git clone https://github.com/jashkenas/coffee-script.git jeremys-coffee
+   15  cd my-proj/
+   16  cd assignment2
+   17  cd Assignment2
+   18  git init
+   19  git config --help
+   20  git remote
+   21  git remote show origin
+   22  git remote show origin .git/
+   23  git fetch
+   24  git init
+   25  cd .git/
+   26  git remote show origin
+   27  cd ../
+   28  git fetch origin
+   29  git branch
+   30  git clone https://github.com/chriseppstein/compass.git
+   31  cd compass
+   32  git branch
+   33  git checkout master
+   34  git pull --rebase
+   35  git fecth
+   36  git fetch
+   37  git rebase origin/master master
+   38  git checkout master
+   39  git checkout -b 1234_sales_tax_calculations
+   40  git checkout -b 1234_sales_tax_calculations master
+   41  git add.
+   42  git add .
+   43  git add lib/
+   44  git add spec/foo1_spec.rb
+   45  git rm .
+   46  git add -u .
+   47  git add -u lib/
+   48  git commit -m "Implemented the Michigan sales tax calculations [#1234]"
+   49  history > tran_assign2b.txt
+   50  git lob > tran_assign2b_log.txt
+   51  git log > tran_assign2b_log.txt
+   52  git commit -am "Refactoring SalesTaxHelper into SalesTax module [#1234]"
+   53  git config --global alias.amend "commit --amend -C HEAD"
+   54  git add README
+   55  git admend
+   56  git amend
+   57  git reset --soft HEAD~1
+   58  git reset --hard HEAD~1
+   59  git reset --soft HEAD~10
+   60  git reset --hard HEAD~6
+   61  git push --set-upstream origin 1234_sales_tax_calculations
+   62  git push
+   63  git checkout master
+   64  git pull --rebase
+   65  git checkout 1234_sales_tax_calculations
+   66  git push
+   67  git rebase master
+   68  git rebase master
+   69  git add lib/sales_tax.rb
+   70  git rebase --continue
+   71  git push -f
+   72  git checkout master
+   73  git merge 1234_sales_tax_calculations
+   74  git push
+   75  git pull --rebase
+   76  history > tran_assign2b2.txt

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<a href="index.html">Home</a>
+<a href="tictactoe.html">Tic Tac Toe</a>
+<a href="regForm.html">Registration Form</a>
+<a href="contactUs.html">Contact Us</a>
+<a href="faq.html">FAQ</a>
+
+<h1>Registration Form</h1>
+
+<form class="main" id="regForm">
+	
+	<div class="field">
+		First Name: <br>
+		<input type="text" name="firstName" placeholder="Clark">
+	</div>
+
+	<div class="field">
+		Last Name: <br>
+		<input type="text" name="lastName" placeholder="Kent">
+	</div>
+	
+	<div class="field">
+		Email: <br>
+		<input type="text" class="email" name="email" placeholder="clarkkent@email.com" onsubmit="valEmail">
+	</div>
+
+	<div class="field">
+		Gender: <br>
+		<input type="radio" name="gender" value="female" checked> Female<br>
+		<input type="radio" name="gender" value="male"> Male<br>	
+	</div>
+
+	<div class="message">Message:
+		<textarea name="message" placeholder="Write your message here..."></textarea>
+	</div>
+
+	<button class="submit" type="submit">SUBMIT</button>
+</form>
+
+<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.min.js"></script>
+<script src="regForm.js"></script>
+
+</body>
+</html>

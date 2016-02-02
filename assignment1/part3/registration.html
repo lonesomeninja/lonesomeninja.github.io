@@ -1,0 +1,51 @@
+
+<html>
+<head>
+	<a href="index.html">Home</a>
+	<a href="calculator.html">Calculator</a>
+	<a href="registration.html">Registration</a>
+	<a href="feedback.html">Feeback</a>
+	<a href="faq.html">FAQ</a>
+
+	<title>Registration</title>
+
+	<link rel="stylesheet" href="style.css">
+
+	<script src="script.js"></script>
+</head>
+
+<body class="body">
+
+<h1>Registration Form</h1>
+
+	<form class="form">
+	
+	<div class="content">
+	First Name: <br>
+	<input type="text" name="first-name" placeholder="Clark" required>
+	</div>
+
+	<div class="content">
+	Last Name: <br>
+	<input type="text" name="last-name" placeholder="Kent" required>
+	</div>
+	
+	<div class="content">
+	Email: <br>
+	<input type="text" class="email" name="email" placeholder="clarkkent@email.com" onsubmit="valEmail" required>
+	</div>
+
+	<div class="content">
+	Gender: <br>
+	<input type="radio" name="gender" value="female" checked required> Female<br>
+	<input type="radio" name="gender" value="male"> Male<br required>	
+	</div>
+
+	<div class="submit">
+	<input type="submit" value="SUBMIT" onclick="submitReg">
+	</div>
+	</form>
+
+
+</body>
+</html>
