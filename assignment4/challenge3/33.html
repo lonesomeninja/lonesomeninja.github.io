@@ -3,11 +3,77 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link href="../css/indexStyles.css" rel="stylesheet">
     <script type="text/javascript" src="angular.min.js"></script>
     <script type="text/javascript" src="33.js"></script>
 </head>
 
 <body ng-controller="StoreController as store">
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+
+            <a href="../index.html" class="navbar-brand">Parent</a>
+
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse navHeaderCollapse">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="active"><a href="index.html">Home</a></li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Challenge 1<b class="caret"></b></a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="../challenge1/14.html">Challenge 1.4</a></li>
+                            <li><a href="../challenge1/16.html">Challenge 1.6</a></li>
+                            <li><a href="../challenge1/17.html">Challenge 1.7</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Challenge 2<b class="caret"></b></a>
+
+                        <ul class="dropdown-menu">
+
+                            <li><a href="../challenge2/22.html">Challenge 2.2</a></li>
+                            <li><a href="../challenge2/23.html">Challenge 2.3</a></li>
+                            <li><a href="../challenge2/24.html">Challenge 2.4</a></li>
+                            <li><a href="../challenge2/25.html">Challenge 2.5</a></li>
+                            <li><a href="../challenge2/27.html">Challenge 2.7</a></li>
+                            <li><a href="../challenge2/28.html">Challenge 2.8</a></li>
+                            <li><a href="../challenge2/29.html">Challenge 2.9</a></li>
+                            <li><a href="../challenge2/210.html">Challenge 2.10</a></li>
+
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Challenge 3<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="32.html">Challenge 3.2</a></li>
+                            <li><a href="33.html">Challenge 3.3</a></li>
+                            <li><a href="34.html">Challenge 3.4</a></li>
+                            <li><a href="36.html">Challenge 3.6</a></li>
+                            <li><a href="37.html">Challenge 3.7</a></li>
+                            <li><a href="39.html">Challenge 3.9</a></li>
+                            <li><a href="310.html">Challenge 3.10</a></li>
+                            <li><a href="311.html">Challenge 3.11</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <header>
         <h1 class="text-center">Flatlander Crafted Gems</h1>
         <h2 class="text-center">– an Angular store –</h2>
@@ -87,6 +153,9 @@
             </section>
         </div>
     </div>
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+
 </body>
 
 </html>
