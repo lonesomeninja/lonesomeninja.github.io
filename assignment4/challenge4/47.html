@@ -2,12 +2,15 @@
 <html ng-app="gemStore">
 
 <head>
+    <link rel="stylesheet" type="text/css" href="../bootstrap.min.css" />
+    <script type="text/javascript" src="../angular.min.js"></script>
+    <script type="text/javascript" src="47.js"></script>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/indexStyles.css" rel="stylesheet">
 </head>
 
-<body class="container" ng-controller="StoreController as store">
+<body ng-controller="StoreController as store">
     <div class="navbar navbar-inverse navbar-static-top">
         <div class="container">
 
@@ -29,10 +32,10 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Challenge 1<b class="caret"></b></a>
 
-                        <ul class="dropdown-menu active">
-                            <li><a href="14.html">Challenge 1.4</a></li>
-                            <li><a href="16.html">Challenge 1.6</a></li>
-                            <li class="active"><a href="17.html">Challenge 1.7</a></li>
+                        <ul class="dropdown-menu">
+                            <li><a href="../challenge1/14.html">Challenge 1.4</a></li>
+                            <li><a href="../challenge1/16.html">Challenge 1.6</a></li>
+                            <li><a href="../challenge1/17.html">Challenge 1.7</a></li>
                         </ul>
                     </li>
 
@@ -64,17 +67,18 @@
                             <li><a href="../challenge3/39.html">Challenge 3.9</a></li>
                             <li><a href="../challenge3/310.html">Challenge 3.10</a></li>
                             <li><a href="../challenge3/311.html">Challenge 3.11</a></li>
-                            
+
                         </ul>
                     </li>
-                    <li class="dropdown">
+
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Challenge 4<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="42.html">Challenge 4.2</a></li>
-                            <li><a href="../challenge4/43.html">Challenge 4.3</a></li>
-                            <li><a href="../challenge4/44.html">Challenge 4.4</a></li>
-                            <li><a href="../challenge4/46.html">Challenge 4.6</a></li>
-                            <li><a href="../challenge4/47.html">Challenge 4.7</a></li>
+                            <li><a href="43.html">Challenge 4.3</a></li>
+                            <li><a href="44.html">Challenge 4.4</a></li>
+                            <li><a href="46.html">Challenge 4.6</a></li>
+                            <li class="active"><a href="47.html">Challenge 4.7</a></li>
 
                         </ul>
                     </li>
@@ -89,15 +93,26 @@
             </div>
         </div>
     </div>
-    <div class="product row" ng-repeat="product in store.products">
+    <!--  Store Header  -->
+    <header>
+        <h1 class="text-center">Flatlander Crafted Gems</h1>
+        <h2 class="text-center">– an Angular store –</h2>
+    </header>
 
-        <h3>
-        {{product.name}}
-        <em class="pull-right">${{product.price}}</em>
-      </h3>
+    <!--  Products Container  -->
+    <div class="list-group">
+        <!--  Product Container  -->
+        <div class="list-group-item" ng-repeat="product in store.products">
+            <h3>{{product.name}} <em class="pull-right">{{product.price | currency}}</em></h3>
+
+            <!-- Image Gallery  -->
+            <product-gallery></product-gallery>
+
+            <!-- Product Tabs  -->
+            <product-tabs></product-tabs>
+
+        </div>
     </div>
-    <script type="text/javascript" src="angular.min.js"></script>
-    <script type="text/javascript" src="17.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="../js/bootstrap.js"></script>
 </body>

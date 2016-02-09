@@ -2,16 +2,18 @@
 <html ng-app="gemStore">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../bootstrap.min.css" />
+    <script type="text/javascript" src="../angular.min.js"></script>
+    <script type="text/javascript" src="42.js"></script>
+
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
     <link href="../css/indexStyles.css" rel="stylesheet">
-    <script type="text/javascript" src="angular.min.js"></script>
-    <script type="text/javascript" src="311.js"></script>
 </head>
 
 <body ng-controller="StoreController as store">
-      <div class="navbar navbar-inverse navbar-static-top">
+
+    <div class="navbar navbar-inverse navbar-static-top">
         <div class="container">
 
             <a href="../../index.html" class="navbar-brand">Parent</a>
@@ -56,29 +58,29 @@
 
                         </ul>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Challenge 3<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="32.html">Challenge 3.2</a></li>
-                            <li><a href="33.html">Challenge 3.3</a></li>
-                            <li><a href="34.html">Challenge 3.4</a></li>
-                            <li><a href="36.html">Challenge 3.6</a></li>
-                            <li><a href="37.html">Challenge 3.7</a></li>
-                            <li><a href="39.html">Challenge 3.9</a></li>
-                            <li><a href="310.html">Challenge 3.10</a></li>
-                            <li class="active"><a href="311.html">Challenge 3.11</a></li>
-                            
+                            <li><a href="../challenge3/32.html">Challenge 3.2</a></li>
+                            <li><a href="../challenge3/33.html">Challenge 3.3</a></li>
+                            <li><a href="../challenge3/34.html">Challenge 3.4</a></li>
+                            <li><a href="../challenge3/36.html">Challenge 3.6</a></li>
+                            <li><a href="../challenge3/37.html">Challenge 3.7</a></li>
+                            <li><a href="../challenge3/39.html">Challenge 3.9</a></li>
+                            <li><a href="../challenge3/310.html">Challenge 3.10</a></li>
+                            <li><a href="../challenge3/311.html">Challenge 3.11</a></li>
+
                         </ul>
                     </li>
-                    
-                    <li class="dropdown">
+
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Challenge 4<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="../challenge4/42.html">Challenge 4.2</a></li>
-                            <li><a href="../challenge4/43.html">Challenge 4.3</a></li>
-                            <li><a href="../challenge4/44.html">Challenge 4.4</a></li>
-                            <li><a href="../challenge4/46.html">Challenge 4.6</a></li>
-                            <li><a href="../challenge4/47.html">Challenge 4.7</a></li>
+                            <li class="active"><a href="42.html">Challenge 4.2</a></li>
+                            <li><a href="43.html">Challenge 4.3</a></li>
+                            <li><a href="44.html">Challenge 4.4</a></li>
+                            <li><a href="46.html">Challenge 4.6</a></li>
+                            <li><a href="47.html">Challenge 4.7</a></li>
 
                         </ul>
                     </li>
@@ -132,15 +134,23 @@
                 </ul>
 
                 <!--  Description Tab's Content  -->
-                <div ng-show="tab.isSet(1)">
-                    <h4>Description</h4>
-                    <blockquote>{{product.description}}</blockquote>
+                <div ng-show="tab.isSet(1)" ng-include="'product-description.html'">
+
                 </div>
 
                 <!--  Spec Tab's Content  -->
                 <div ng-show="tab.isSet(2)">
                     <h4>Specs</h4>
-                    <blockquote>Shine: {{product.shine}}</blockquote>
+                    <ul class="list-unstyled">
+                        <li>
+                            <strong>Shine</strong> : {{product.shine}}</li>
+                        <li>
+                            <strong>Faces</strong> : {{product.faces}}</li>
+                        <li>
+                            <strong>Rarity</strong> : {{product.rarity}}</li>
+                        <li>
+                            <strong>Color</strong> : {{product.color}}</li>
+                    </ul>
                 </div>
 
                 <!--  Review Tab's Content  -->
@@ -151,7 +161,7 @@
                         <li ng-repeat="review in product.reviews">
                             <blockquote>
                                 <strong>{{review.stars}} Stars</strong> {{review.body}}
-                                <cite class="clearfix">—{{review.author}} on {{review.createdOn | date}}</cite>
+                                <cite class="clearfix">—{{review.author}}</cite>
                             </blockquote>
                         </li>
                     </ul>
