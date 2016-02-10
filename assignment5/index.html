@@ -8,47 +8,57 @@
     <link href="http://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css" rel="stylesheet">
 </head>
 
-<body ng-controller="TutorialController as list">
+<body class= "container" ng-controller="TutorialController as list">
 
     <div>
         <div class="navbar navbar-inverse navbar-static-top">
             <div>
                 <a href="../index.html" class="navbar-brand">Parent</a>
             </div>
-        </div>
-    </div>
-    
-    <div>
-    <table id="Tutorial">
-        <thead>
-            <tr>
-                <th>Image</th>
-                <th>Title</th>
-                <th>Author</th>
-                <th>URL</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="single" ng-repeat="tutorial in list.tutorials">
+            <div class="collapse navbar-collapse navHeaderCollapse">
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="startbootstrap-blog-post-1.0.4/index.html" style="padding-right: 20px">Blog</li>
+
+                </ul>
                 
-                <td><img class ="image" src="{{tutorial.image}}"></img></td>
-                <td>{{tutorial.title}}</td>
-                <td>{{tutorial.author}}</td>
-                <td><a class="btn btn-info btn-lg" href="{{tutorial.url}}" target="_blank">Visit Site!</a></td>
-               
-            </tr>
-            
-        </tbody>
-    </table>
-    </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="../bootstrap/js/bootstrap.js"></script>
-    <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="http://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="angular.min.js"></script>
-    <script type="text/javascript" src="index.js"></script>
-    
-    
+            </div>
+        </div>
+
+        <div>
+            <table id="Tutorial">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>URL</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="single" ng-repeat="tutorial in list.tutorials">
+
+                        <td><img class="image" src="{{tutorial.image}}"></img>
+                        </td>
+                        <td>{{tutorial.title}}</td>
+                        <td>{{tutorial.author}}</td>
+                        <td><a class="btn btn-info btn-lg" href="{{tutorial.url}}" target="_blank">Visit Site!</a></td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.js"></script>
+        <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script src="http://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="angular.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+
+
 </body>
 
 </html>
