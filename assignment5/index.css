@@ -1,13 +1,16 @@
-body{
+body
+{
     background-color: lightyellow;
 }
 
 .single
 {
     border: 2px solid black;
-
-    text-align: center;
-    height: 400px;
     background-color: white;
 }
 
+.image
+{
+    width: 175px;
+    height: 200px;
+}
