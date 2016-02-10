@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="tutorialList">
+
+<head>
+    <title>Assignment 5</title>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
+    <link href="http://cdn.datatables.net/1.10.10/css/jquery.dataTables.min.css" rel="stylesheet">
+</head>
+
+<body ng-controller="TutorialController as list">
+
+    <div>
+        <div class="navbar navbar-inverse navbar-static-top">
+            <div>
+                <a href="../index.html" class="navbar-brand">Parent</a>
+            </div>
+        </div>
+    </div>
+    <div class="containter">
+    <table id="Tutorial">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>URL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="single" ng-repeat="tutorial in list.tutorials">
+                
+                <td><img src="{{tutorial.image}}"></img></td>
+                <td>{{tutorial.title}}</td>
+                <td>{{tutorial.author}}</td>
+                <td><a class="btn btn-info btn-lg" href="{{tutorial.url}}" target="_blank">Visit Site!</a></td>
+               
+            </tr>
+            
+        </tbody>
+    </table>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="http://cdn.datatables.net/1.10.10/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    
+    
+</body>
+
+</html>
